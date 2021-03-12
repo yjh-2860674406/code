@@ -1,0 +1,8 @@
+f = open (r"D:\code\Python\Test\ahh.txt", "r", encoding="utf-8")
+print(f.read())
+f.close()
+f = open (r"D:\code\Python\Test\ahh.txt", "w", encoding="utf-8")
+f.write("yjh is a good student")
+f.close()
+f = open (r"D:\code\Python\Test\ahh.txt", "r", encoding="utf-8")
+print(f.read())
