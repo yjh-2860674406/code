@@ -2,6 +2,7 @@ import sys
 import pygame
 from settings import Settings
 from ship import Ship
+import game_functions as gf
 
 def run_game():
     # 初始化背景设置
@@ -20,11 +21,7 @@ def run_game():
     # 当有操作的时候(点击鼠标或键盘)
     while True :
 
-        for event in pygame.event.get() :
-            # 遇到让程序退出的行为的时候关闭窗口,退出程序
-            if event.type == pygame.QUIT :
-                sys.exit()
-            # 刷洗窗口,只允许存在一个新的窗口
+        gf.check_events()
 
         # 每次循环都重绘屏幕
         screen.fill(bg_color)
