@@ -1,5 +1,5 @@
 #include <stdio.h>
-// a = 97 z = 122 Z = 96 A = 65
+// a = 97 z = 122 Z = 90 A = 65
 void change (char);
 
 int main()
@@ -13,13 +13,13 @@ void change (char char_x)
 {
     int i = 0;
     printf("请输入字母(大小写均可):\n");
-    scanf("%s", &char_x);
+    scanf("%c", &char_x);
     i = char_x;
-    if (i >= 65 && i <= 96)
+    if (i >= 65 && i <= 90)
     {
         int j = i - 64;
         i += j;
-        if (i > 96)
+        if (i > 90)
         {
             i -= 26;
         }
