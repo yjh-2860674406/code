@@ -2,7 +2,7 @@
 
 int main()
 {
-    int array[] = {1,3,54,32,76,23,56,83,258,43,768};
+    int array[] = {9,8,5,4,2,0};
     int size = sizeof(array)/sizeof(array[0]);
     ShellSort(array, size);
     for (int i=0; i<size; i++)
