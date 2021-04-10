@@ -3,5 +3,6 @@ import numpy as np
 
 a = np.arange(0, 5)
 b = tf.convert_to_tensor(a, dtype=tf.int64)
+# 转换成张量
 print("a:", a)
 print("b:", b)

@@ -4,3 +4,5 @@ x = tf.constant([[1, 2, 3], [2, 2, 3]])
 print("x:", x)
 print("mean of x:", tf.reduce_mean(x))  # 求x中所有数的均值
 print("sum of x:", tf.reduce_sum(x, axis=1))  # 求每一行的和
+# axis 控制方向 (=0 控制第一个维度) (=1 控制第二个维度)
+
