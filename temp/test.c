@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-void change (int* n, int* m)
+int fei (int n)
 {
-    if (*n > *m) *m = *n;
-}
-
-void Max (int n, int m, int array[n][m])
-{
-    int num=-200;
-    for (int i=0; i<n; i++)
+    if (n == 1 || n == 2)
     {
-        for (int j=0; j<m; j++)
-        {
-            change(&array[i][j], &num);
-        }
+        return 1;
     }
-    printf("Max element : %d\n", num);
+    else 
+    {
+        return (fei (n-1) + fei (n-2));
+    }
 }
 
 int main()
 {
-    int array[3][4] = {{1,2,3,4},{9,8,7,6},{-10,10,-5,2}};
-    Max(3,4,array);
+    for (int i=1; i<31; i++)
+    {
+        int n = fei(i);
+        printf("%d\t", n);
+        if (i%5 == 0)
+        {
+            printf("\n");
+        }
+    }
 }
