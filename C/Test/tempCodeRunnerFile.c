@@ -1,2 +1,0 @@
-
-    Print(column, row, AT);
