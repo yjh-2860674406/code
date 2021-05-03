@@ -218,12 +218,12 @@ void index (People* peoples)
             {
                 std::cout << "µØÖ·:" << peoples[i].address << std::endl;
             }
-            num++;
+            i++;
             continue;
         }
         else
         {
-            i++;
+            num++;
         }
     }
     while (num == 0)
