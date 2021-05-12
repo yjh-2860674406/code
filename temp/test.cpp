@@ -2,32 +2,68 @@
 
 using namespace std;
 
-class Animal 
+class People
 {
-    public :
-    string m_name;
-    int m_age;
-    int m_weight;
-
-    Animal (string name, int age, int weight)
+public :
+    People(string name, int age, int life) : m_max(life)
     {
         m_name = name;
         m_age = age;
-        m_weight = weight;
+        m_life = life;
     }
 
-    virtual void play ();
+    void Read ()
+    {
+        cout << m_name << " has " << m_life << " life." << endl;
+    }
+
+    void Kill (People &o)
+    {
+        o.m_life --;
+        if (o.m_life) 
+        {
+            cout << m_name << " kill " << o.m_name << " a life." << endl;
+            o.Read();
+        }
+        else cout << o.m_name << " has died!" << endl;
+    }
+
+    void Cure ()
+    {
+        m_life ++ ;
+        cout << m_name << " eat a taozi!" << endl;
+        Read();
+    }
+
+private :
+    string m_name;
+    int m_age;
+    int m_life;
+    const int m_max;
 };
 
-class Dog : public Animal
+class Kill 
 {
-    void play ()
+public :
+    Kill (People &k, People &o)
     {
-        printf("%s is running !", m_name);
+        k.Kill(o);
+    }
+};
+
+class Cure
+{
+public :
+    Cure (People &o)
+    {
+        o.Cure();
     }
 };
 
 int main()
 {
-    Dog YJh ("YJH", 19, 150);
+    People p1("Yjh", 19, 4);
+    People p2("Cy", 19, 3);
+    Kill k(p1,p2);
+    Cure c(p2);
 }

@@ -1,7 +1,6 @@
 #include <iostream>
-#include "character.h"
-#include "equipment.h"
-#include "judge.h"
+#include "Character.h"
+#include "Equipment.h"
 
 enum ID {主公, 忠臣, 反贼};
 
@@ -12,7 +11,7 @@ class Player
     Character crt;
     EquipmentPlace eqp;
     Judge jde;
-    
+   
     void Check ()
     {
         cout << "血量：" << crt.life << endl;

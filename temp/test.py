@@ -1,25 +1,27 @@
-import requests
-from lxml import etree
-from bs4 import BeautifulSoup
+list = ['1','2','3','4']
 
+# 在列表末尾添加元素
+list.append('5')
 
-class Douban:
-    def __init__(self):
-        self.URL = "https://movie.douban.com/top250"
-        self.startnum = []
-        for start_num in range(0, 251, 25):
-            self.startnum.append(start_num)
-        self.header = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/89.0.4389.114 Safari/537.36"}
+# 在特定位置添加元素
+list.insert(0, '0')
 
-    def get_top250(self):
-        for start in self.startnum:
-            start = str(start)
-            html = requests.get(self.URL, params={'start': start})
-            
-            
+# 删除特定位置的元素
+del list[5]
 
+# 弹出并可以使用末尾元素，括号内可指定位置
+print(list.pop())
 
-if __name__ == "__main__":
-    cls = Douban()
-    cls.get_top250()
+# 删除指定值(第一个)
+list.remove('0')
+
+# 对列表进行字母顺序的永久排序(reversed=True 相反)
+list.sort()
+list.sort(reversed=True)
+
+# 临时排序
+sorted(list)
+sorted(list, reverse=True)
+
+# 数组的长度
+len(list)
