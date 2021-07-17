@@ -1,0 +1,67 @@
+mkdir: cannot create directory ‘logs’: File exists
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-06-02-23-03.log
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-06-02-23-03.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-06-02-23-03.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 3770
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://13692313203/Audio/MA-06-02-23-03/code/
+[Modelarts Service Log]boot_file: code/train_language_model.py
+[Modelarts Service Log]log_url: /tmp/log/MA-06-02-23-03.log
+[Modelarts Service Log]command: code/train_language_model.py --data_url=s3://13692313203/Data/ --train_url=s3://13692313203/Audio/MA-06-02-23-03/output/V0003/ --num_gpus=1
+[Modelarts Service Log]MODELARTS_IPOIB_DEVICE: 
+[Modelarts Service Log]dependencies_file_dir: /home/work/user-job-dir/code
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-4c644d5b
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/06/02 23:30:14]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-4c644d5b
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-06-02 23:30:15,285 - modelarts-downloader.py[line:619] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://13692313203/Audio/MA-06-02-23-03/code/', trace=False, type='common', verbose=False)
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+INFO:root:Using MoXing-v1.17.3-4c644d5b
+INFO:root:Using OBS-Python-SDK-3.20.7
+Using TensorFlow backend.
+语音模型建立完成！
+WARNING:tensorflow:From /home/work/anaconda/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/work/anaconda/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2021-06-02 23:30:21.724682: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-02 23:30:21.923140: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5647a06fb390 executing computations on platform CUDA. Devices:
+2021-06-02 23:30:21.923179: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla V100-PCIE-32GB, Compute Capability 7.0
+2021-06-02 23:30:21.941309: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3000000000 Hz
+2021-06-02 23:30:21.941722: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5647a0816cf0 executing computations on platform Host. Devices:
+2021-06-02 23:30:21.941747: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2021-06-02 23:30:21.941876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:21:01.0
+totalMemory: 31.75GiB freeMemory: 31.44GiB
+2021-06-02 23:30:21.941894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2021-06-02 23:30:21.944062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-02 23:30:21.944086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2021-06-02 23:30:21.944092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2021-06-02 23:30:21.944171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30583 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:21:01.0, compute capability: 7.0)
+WARNING:tensorflow:From /home/work/anaconda/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3733: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/work/anaconda/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3733: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+声学模型参数：
+[('is_training', True), ('learning_rate', 0.0008), ('vocab_size', 407)]
+Traceback (most recent call last):
+  File "code/train_language_model.py", line 9, in <module>
+    from train_AcousticModel import train_data, batch_num
+  File "/cache/user-job-dir/code/train_AcousticModel.py", line 41, in <module>
+    shutil.copyfile("obs://13692313203/Video",)
+TypeError: mox_copyfile() missing 1 required positional argument: 'dst_url'
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]Training completed.

@@ -1,0 +1,27 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://guidian23/MA-05-25-21-32/code/
+[Modelarts Service Log]boot_file: code/AcousticModel.py
+[Modelarts Service Log]log_url: /tmp/log/MA-05-25-21-32.log
+[Modelarts Service Log]command: code/AcousticModel.py --data_url=s3://guidian23/data_thchs30/data/ --train_url=s3://guidian23/MA-05-25-21-32/output/V0001/ --num_gpus=1
+[Modelarts Service Log]MODELARTS_IPOIB_DEVICE: 
+[Modelarts Service Log]dependencies_file_dir: /home/work/user-job-dir/code
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.1-47ce498c
+INFO:root:Using OBS-Python-SDK-3.1.2
+[ModelArts Service Log][INFO][2021/05/25 21:36:44]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.1-47ce498c
+INFO:root:Using OBS-Python-SDK-3.1.2
+[ModelArts Service Log]2021-05-25 21:36:44,778 - modelarts-downloader.py[line:619] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://guidian23/MA-05-25-21-32/code/', trace=False, type='common', verbose=False)
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "code/AcousticModel.py", line 11, in <module>
+    from utils.constant import *
+  File "/cache/user-job-dir/code/utils/constant.py", line 1
+SyntaxError: Non-ASCII character '\xe5' in file /cache/user-job-dir/code/utils/constant.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]Training completed.
