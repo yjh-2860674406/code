@@ -1,3 +1,7 @@
 {
-    "python.linting.pylintArgs": ["--generate-members"]
+    "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "masmtasm.ASM.MASMorTASM": "MASM",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

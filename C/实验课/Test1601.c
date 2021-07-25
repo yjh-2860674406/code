@@ -537,8 +537,8 @@ void Screen ()
         }
         case 104:
         {
-            char select;
             printf("选择根据学号还是姓名查询(i为学号,n为姓名)：\n");
+            char select;
             select = getchar();getchar();
             if (select == 'i') FindStuById();
             else FindStuByName();
