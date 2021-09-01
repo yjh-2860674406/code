@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch game",
+            "request": "launch",
+            "mainClass": "Java.Game.game",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch coin",
+            "request": "launch",
+            "mainClass": "Java.Study.coin",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch input",
+            "request": "launch",
+            "mainClass": "Java.Study.input",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "Java.Study.hello",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign",
+            "request": "launch",
+            "mainClass": "Java.Study.assign.Assign",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ifelse",
+            "request": "launch",
+            "mainClass": "ifelse.Ifelse",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign",
+            "request": "launch",
+            "mainClass": "assign.Assign",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Variable",
+            "request": "launch",
+            "mainClass": "variable.Variable",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Input",
             "request": "launch",
             "mainClass": "input.Input",
