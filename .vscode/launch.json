@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch game",
             "request": "launch",
+            "mainClass": "Java.ThreeKill.game",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch study101",
+            "request": "launch",
+            "mainClass": "Java.Study.study101",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch game",
+            "request": "launch",
             "mainClass": "Java.Game.game",
             "projectName": "code_72e5cfe6"
         },

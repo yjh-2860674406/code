@@ -27,7 +27,7 @@ s:
 		mov al,es:[bx]
 		mov ah,es:16[si]
 		mov ds:[di],ax
-		
+	
 		inc bx
 		add di,2
 	loop s1

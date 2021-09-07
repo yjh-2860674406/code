@@ -15,7 +15,7 @@ def run_game():
     
     # Set the background color.
     bg_color = (230, 230, 230)
-    
+
     # Make a ship.
     ship = Ship(ai_settings, screen)
     # Make a group to store bullets in.
