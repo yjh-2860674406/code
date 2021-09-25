@@ -487,7 +487,7 @@ void Screen ()
     printf("408.查询学生挂科科目\n");
     printf("501.保存更改\n");
     printf(star"\n");
-    
+   
     scanf("%d", &num);getchar();
     switch (num)
     {

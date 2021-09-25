@@ -1,6 +1,0 @@
-{
-    "python.linting.pylintArgs": [
-        "--generate-members"
-    ],
-    "C_Cpp.errorSquiggles": "Disabled"
-}

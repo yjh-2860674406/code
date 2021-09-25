@@ -6,9 +6,30 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch game",
+            "name": "Launch Triangle",
             "request": "launch",
-            "mainClass": "Java.ThreeKill.game",
+            "mainClass": "Triangle",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch study301",
+            "request": "launch",
+            "mainClass": "Java.Study.study301",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch study201",
+            "request": "launch",
+            "mainClass": "Java.Study.study201",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test201",
+            "request": "launch",
+            "mainClass": "Java.Test.Test201",
             "projectName": "code_72e5cfe6"
         },
         {
@@ -20,94 +41,11 @@
         },
         {
             "type": "java",
-            "name": "Launch game",
+            "name": "Launch Test101",
             "request": "launch",
-            "mainClass": "Java.Game.game",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch coin",
-            "request": "launch",
-            "mainClass": "Java.Study.coin",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch input",
-            "request": "launch",
-            "mainClass": "Java.Study.input",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch hello",
-            "request": "launch",
-            "mainClass": "Java.Study.hello",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Assign",
-            "request": "launch",
-            "mainClass": "Java.Study.assign.Assign",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Ifelse",
-            "request": "launch",
-            "mainClass": "ifelse.Ifelse",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Assign",
-            "request": "launch",
-            "mainClass": "assign.Assign",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Variable",
-            "request": "launch",
-            "mainClass": "variable.Variable",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Input",
-            "request": "launch",
-            "mainClass": "input.Input",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hello",
-            "request": "launch",
-            "mainClass": "hello.Hello",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hello",
-            "request": "launch",
-            "mainClass": "Hello",
-            "projectName": "code_72e5cfe6"
-        },
-        {
-            "name": "Python: 当前文件",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python: 当前文件",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+            "mainClass": "Java.Test.Test101",
+            "projectName": "code_72e5cfe6",
+            "vmArgs": "--enable-preview"
         },
         {
             "name": "gcc.exe - 生成和调试活动文件",
@@ -116,11 +54,11 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",

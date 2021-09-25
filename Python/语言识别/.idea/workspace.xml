@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5199613-d328-4508-abb7-ab5e24db8d31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MA_LOG/MA-06-02-23-03_V0001_job-ma-06-02-23-03.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MA_LOG/MA-06-02-23-03_V0002_job-ma-06-02-23-03.0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcousticModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/AcousticModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/reLayers.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/reLayers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vscode/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/实验课/Test1601.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/实验课/Test1601.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/数据结构(书)/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/Study/study101.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/Study/study101.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/Test/Test101.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/小黄人_l_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/白月魁_l_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../temp/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../temp/test.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +34,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/train_language_model.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="tf2.1" type="PythonConfigurationType" factoryName="Python">
       <module name="语言识别" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
