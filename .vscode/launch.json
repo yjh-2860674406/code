@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test401",
+            "request": "launch",
+            "mainClass": "Java.Test.Test401",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test301",
+            "request": "launch",
+            "mainClass": "Java.Test.Test301",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Triangle",
             "request": "launch",
             "mainClass": "Triangle",

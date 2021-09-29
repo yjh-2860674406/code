@@ -6,7 +6,7 @@
 #define TRUE 1
 #define FALSE 0
 #define OVERFLOW -2
-#define STUID id_stu-2020100000
+#define STUID id_stu-2020101300
 #define CLSID id_cls+0
 #define CHECKCLS if (class->stu_score[CLSID][0] == -1) return FALSE;
 #define CHECKSTU if (class->stu_score[CLSID][STUID] == -1) return FALSE;
@@ -75,31 +75,6 @@ int getStuScore (PtrClsDate class, int id_cls, int id_stu) {
     return class->stu_score[CLSID][STUID];
 }
 
-int* getStuScores (PtrClsDate class, int id_stu) {
-    // 返回一个数组获取学生的全部成绩
-    int* array = (int*)malloc((class->num_Class+10)*sizeof(int));
-    for (int i=0; i<class->num_Class; i++) array[i] = 0;
-    int num=0;
-    for (int i=0; i<class->num_Class; i++) {
-        // if (class->stu_score[i][STUID] == -1) continue;
-        array[num++] = class->stu_score[i][STUID];
-    }
-    array[num] = 200;
-    return array;
-}
-
-int* getClsSCores (PtrClsDate class, int id_cls) {
-    // 返回一个数组获取课程的全部学生的成绩
-    CHECKCLS
-    int* array = (int*)malloc((class->num_Stu+1)*sizeof(int));
-    int num = 0;
-    for (int i=0; i<class->num_Stu; i++) {
-        // if (class->stu_score[CLSID][i] != -1) 
-        array[num++] = class->stu_score[CLSID][i]; 
-    }
-    array[num] = 200;
-    return array;
-}
 
 int Screen () {
     // 交互界面
@@ -112,8 +87,8 @@ int Screen () {
     {
         printf("请输入要进行的操作（0停止）：\n");
         printf("101 添加课程\t102 添加学生成绩\n");
-        printf("201 删除课程\t202 删除学生成绩\t 203 删除学生\n");
-        printf("301 获取学生成绩\t302 获取学生总成绩\t 303 获取课程成绩\n");
+        printf("201 删除课程\t202 删除学生成绩\t 203 删除学生全部成绩\n");
+        printf("301 获取学生成绩\n");
         int num = 0; scanf("%d", &num); getchar();
         switch (num) {
         case 101: 
@@ -127,18 +102,28 @@ int Screen () {
             if (addStuScore(class, id_cls, id_stu, score)) printf("添加成功！\n");
             else printf("无此课程！\n");
             break;
+        case 201:
+            printf("请输入要删除的学生课程：\n");
+            scanf("%d", &id_cls);getchar();
+            delCls(class, id_cls);
+            printf("删除成功！\n");
+            break;
+        case 202:
+            printf("请输入要删除的学生课程和学生id：\n");
+            scanf("%d,%d", &id_cls, &id_stu);
+            delStuScore(class, id_cls, id_stu);
+            printf("删除成功！\n");
+            break;
+        case 203:
+            printf("请输入要删除的学生id：\n");
+            scanf("%d", &id_stu);
+            delStu(class, id_stu);
+            printf("删除成功！\n");
+            break;
         case 301:
             printf("请输入要查询的学生课程和学生id：\n");
             scanf("%d, %d", &id_cls, &id_stu);
             printf("成绩：%d\n", getStuScore(class, id_cls, id_stu));
-            break;
-        case 302:
-            printf("请输入要查询的学生id：\n");
-            scanf("%d", &id_stu); getchar();
-            int* array = getStuScores(class, id_stu);
-            for (int i=0; array[i] != 200; i++) {
-                printf("%d：\t%d\n", i, array[i]);
-            }
             break;
         default:
             return 0;
