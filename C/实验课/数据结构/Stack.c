@@ -8,81 +8,53 @@
 #define OVERFLOW -2
 #define INFEASIBLE -1
 
-typedef int Elem;
-
-struct Node {
-    Elem elem;
-    struct Node * next;
-    int true;
-};
+typedef struct Node {
+    int elem;
+    struct Node* next;
+}Node, *PtrNode;
 
 typedef struct Stack {
-    int length;
-    int size;
-    struct Node * header;    
-}stack,*ptrstack;
+    PtrNode header;
+}Stack, *PtrStack;
 
-ptrstack InitStack () {
-    // 构造一个空表
-    ptrstack Sq = (ptrstack)malloc(sizeof(stack));
-    if (!Sq) return NULL;
-    else {
-        Sq->header = (struct Node*)malloc(sizeof(struct Node));
-        Sq->length = 0;
-        Sq->header->next = NULL;
-        Sq->header->elem = 0;
-        Sq->size = 1;
-        Sq->header->true = 1;
-        return Sq;
+PtrStack InitStack () {
+    // 初始化
+    PtrStack stack = (PtrStack)malloc(sizeof(Stack));
+    stack->header = (PtrNode)malloc(sizeof(Node));
+    stack->header->next = NULL;
+    return stack;
+}
+
+int IsEmpty (PtrStack stack) {
+    // 判断是否为空
+    if (stack->header->next == NULL) return 1;
+    else return 0;
+}
+
+int Push (PtrStack stack, int e) {
+    // 入栈
+    PtrNode temp = (PtrNode)malloc(sizeof(Node));
+    if (!temp) return FALSE;
+    temp->elem = e; temp->next = stack->header->next;
+    stack->header->next = temp; return TRUE;
+}
+
+int Pop (PtrStack stack) {
+    // 出栈
+    while (!IsEmpty(stack)) {
+        int temp = stack->header->next->elem;
+        free(stack->header->next); stack->header->next = stack->header->next->next;
+        return temp;
     }
 }
 
-int DestoryStack (ptrstack Sq) {
-    // 销毁栈 Sq
-    struct Node * temp = Sq->header;
-    for (int i=0; i<Sq->length+1; i++) {
-        temp = temp->next;
-        free(Sq->header);
-        Sq->header = temp;
+int GetTop (PtrStack stack) {
+    // 获取栈顶元素
+    while (!IsEmpty(stack)) {
+        return stack->header->next->elem;
     }
-    free(Sq); Sq = NULL; return TRUE;
 }
 
-int ClearStack (ptrstack Sq) {
-    // 把 S 置为空表
-    Sq->length = 0; 
-    while (Sq->header->next != NULL) {
-        Sq->header->next->true = 0;
-        Sq->header->next = Sq->header->next->next;
-    }
-    return 0;
+int main () {
+    
 }
-
-int StackEmpty (ptrstack Sq) {
-    // 判断是否为空表
-    if (Sq->length == 0) return TRUE; else return FALSE;
-}
-
-int StackLength (ptrstack Sq) {
-    return Sq->length;
-}
-
-int GetTop (ptrstack Sq, Elem* e) {
-    if (!StackEmpty(Sq)) return FALSE;
-    *e = Sq->header->next->elem; return TRUE;
-}
-
-int Push (ptrstack Sq, Elem* e) {
-    if (!StackEmpty(Sq)) return FALSE;
-    *e = Sq->header->next->elem;
-    Sq->header->next->true = 0; Sq->length--; return TRUE;
-}
-
-// int Pop (ptrstack Sq, Elem e) {
-//     if(!StackEmpty(Sq)) {
-//         while (Sq->header->next != NULL) {
-//             Sq->header = Sq->header->next;
-//         }
-//         Sq->header->elem = e; return TRUE;
-//     }
-// }
