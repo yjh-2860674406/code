@@ -15,20 +15,20 @@ typedef struct Tree {
 }Tree, *PtrTree;
 
 PtrTree InitTree (int elem) {
-    // ÂàùÂßãÂåñÊ†ë
+    // ≥ı ºªØ ˜
     PtrTree tree = (PtrTree)malloc(sizeof(Tree));
     tree->left = NULL; tree->right = NULL; tree->elem = elem;
     return tree;
 }
 
 int IsEmpty (PtrTree tree) {
-    // Âà§Êñ≠ÊòØÂê¶‰∏∫Á©∫Ê†ë
+    // ≈–∂œ «∑ÒŒ™ø’ ˜
     if (tree->left == NULL && tree->right == NULL) return 1;
     else return 0;
 }
 
 PtrTree FindNode (PtrTree tree, int elem) {
-    // Êü•ÊâæÂÖÉÁ¥†ËäÇÁÇπ
+    // ≤È’“‘™ÀÿΩ⁄µ„
     PtrTree temp = tree;
     while (1) {
         if (temp->elem > elem && temp->left != NULL) temp = temp->left;
@@ -40,7 +40,7 @@ PtrTree FindNode (PtrTree tree, int elem) {
 }
 
 PtrTree InsertNode (PtrTree tree, int elem) {
-    // ÊèíÂÖ•ÂÖÉÁ¥†ËäÇÁÇπ
+    // ≤Â»Î‘™ÀÿΩ⁄µ„
     PtrTree temp = tree;
     PtrTree new;
     while (TRUE) {
@@ -63,7 +63,7 @@ PtrTree InsertNode (PtrTree tree, int elem) {
 }
 
 // int DeleteNode (PtrTree tree, int elem) {
-//     // Âà†Èô§ÂÖÉÁ¥†ËäÇÁÇπ
+//     // …æ≥˝‘™ÀÿΩ⁄µ„
 //     PtrTree temp = FindNode(tree, elem);
 //     if (temp) {
         
@@ -71,32 +71,40 @@ PtrTree InsertNode (PtrTree tree, int elem) {
 // }
 
 int SwapChild (PtrTree tree) {
-    // ‰∫§Êç¢ÊØè‰∏™ËäÇÁÇπÁöÑÂ∑¶Âè≥ËäÇÁÇπ
-    // ÂèØ‰ª•Áî®Ê†àÊîπËâØ
+    // Ωªªª√ø∏ˆΩ⁄µ„µƒ◊Û”“Ω⁄µ„
+    // ø…“‘”√’ª∏ƒ¡º
     if (tree->left) SwapChild(tree->left);
     if (tree->right) SwapChild(tree->right);
     PtrTree temp = tree->left; tree->left = tree->right; tree->right = temp;
     return TRUE;
 }
 
-int VisitAll (PtrTree tree) {
-    // ÈÅçÂéÜ
-    // ÂèØ‰ª•Áî®Ê†àÊîπËâØ
-    if (tree->left) VisitAll(tree->left);
-    printf("%d\n", tree->elem);
-    if (tree->right) VisitAll(tree->right);
+int VisitAll (PtrTree tree, int num) {
+    // ±È¿˙
+    // ø…“‘”√’ª∏ƒ¡º
+    num += 2;
+    char* space = (char*)malloc(num);
+    for (int i=0; i<num-1; i++) space[i] = ' ';
+    space[num-1] = '\0';
+    if (tree->left) VisitAll(tree->left, num);
+    printf("%s%d\n", space, tree->elem);
+    if (tree->right) VisitAll(tree->right, num);
     return TRUE;
 }
 
 int main ()
 {
+    int num=0;
     PtrTree tree = InitTree(50);
     InsertNode(tree, 40);
     InsertNode(tree, 60);
     InsertNode(tree, 30);
     InsertNode(tree, 45);
+    InsertNode(tree, 20);
+    InsertNode(tree, 35);
+    InsertNode(tree, 70);
     SwapChild(tree);
-    VisitAll(tree);
+    VisitAll(tree, num);
     return 0;
 }
 

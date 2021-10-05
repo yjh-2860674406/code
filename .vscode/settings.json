@@ -6,5 +6,9 @@
         "**/target",
         "**/bin",
         "**/archetype-resources"
-    ]
+    ],
+    "files.associations": {
+        "array": "c",
+        "type_traits": "c"
+    }
 }
