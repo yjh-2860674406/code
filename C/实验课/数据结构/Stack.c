@@ -43,7 +43,8 @@ int Pop (PtrStack stack) {
     // 出栈
     while (!IsEmpty(stack)) {
         int temp = stack->header->next->elem;
-        free(stack->header->next); stack->header->next = stack->header->next->next;
+        PtrNode p = stack->header->next;
+        stack->header->next = stack->header->next->next; free(p); 
         return temp;
     }
 }
@@ -56,5 +57,11 @@ int GetTop (PtrStack stack) {
 }
 
 int main () {
-    
+    PtrStack stack = InitStack();
+    Push(stack, 0);
+    Push(stack, 1);
+    Push(stack, 2);
+    printf("%d\n", Pop(stack));
+    printf("%d\n", Pop(stack));
+    printf("%d\n", Pop(stack));
 }

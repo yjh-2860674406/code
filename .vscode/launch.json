@@ -6,6 +6,118 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Day",
+            "request": "launch",
+            "mainClass": "Java.book8.Day",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Time",
+            "request": "launch",
+            "mainClass": "Java.book6.Time",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Square",
+            "request": "launch",
+            "mainClass": "Java.book8.Square",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cylinder",
+            "request": "launch",
+            "mainClass": "Java.book7.Cylinder",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loan",
+            "request": "launch",
+            "mainClass": "Java.book2.Loan",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch BMI",
+            "request": "launch",
+            "mainClass": "Java.book2.BMI",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch ISBM",
+            "request": "launch",
+            "mainClass": "Java.book6.ISBM",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch two",
+            "request": "launch",
+            "mainClass": "Java.book5.two",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch one",
+            "request": "launch",
+            "mainClass": "Java.book5.one",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Triangle",
+            "request": "launch",
+            "mainClass": "Java.book4.Triangle",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stock",
+            "request": "launch",
+            "mainClass": "Java.book4.Stock",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Wqs",
+            "request": "launch",
+            "mainClass": "Java.book3.Wqs",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChickenRabbit",
+            "request": "launch",
+            "mainClass": "Java.book3.ChickenRabbit",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Game",
+            "request": "launch",
+            "mainClass": "Java.book3.Game",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dai",
+            "request": "launch",
+            "mainClass": "Java.Work.Dai",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch BMI",
+            "request": "launch",
+            "mainClass": "Java.Work.BMI",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Test401",
             "request": "launch",
             "mainClass": "Java.Test.Test401",

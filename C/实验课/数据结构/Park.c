@@ -225,5 +225,5 @@ int Test () {
 
 int main()
 {
-    Screen();
+    Test();
 }

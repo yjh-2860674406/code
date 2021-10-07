@@ -44,7 +44,8 @@ int Pop (PtrQueue queue) {
     // 出队
     while (IsEmpty(queue)) return FALSE;
     int temp = queue->header->next->elem;
-    free(queue->header); queue->header = queue->header->next;
+    PtrNode p = queue->header;
+    queue->header = queue->header->next; free(p);
     return temp;
 }
 
@@ -57,5 +58,11 @@ int GetTop (PtrQueue queue) {
 }
 
 int main () {
-    
+    PtrQueue queue = InitQueue();
+    Push(queue, 0);
+    Push(queue, 1);
+    Push(queue, 2);
+    printf("%d\n", Pop(queue));
+    printf("%d\n", Pop(queue));
+    printf("%d\n", Pop(queue));
 }
