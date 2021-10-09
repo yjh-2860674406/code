@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SequenceTest",
+            "request": "launch",
+            "mainClass": "Java.book10.SequenceTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomIntSequence",
+            "request": "launch",
+            "mainClass": "Java.book10.RandomIntSequence",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duck",
+            "request": "launch",
+            "mainClass": "Java.book10.Duck",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Day",
             "request": "launch",
             "mainClass": "Java.book8.Day",
