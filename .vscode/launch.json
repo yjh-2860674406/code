@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Gamebling",
+            "request": "launch",
+            "mainClass": "Java.book3.Gamebling",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch SequenceTest",
             "request": "launch",
             "mainClass": "Java.book10.SequenceTest",

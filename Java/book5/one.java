@@ -32,10 +32,13 @@ public class one {
     }
 
     public static void main(String[] args) {
-        double[][] matrix = Initmatrix(3, 4);
-        int[] array = locateLarget(matrix, 3, 4);
-        for (int i=0; i<2; i++) {
-            System.out.println(array[i]);
-        }
+        int row = 0; int column = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("请输入矩阵行数："); row = input.nextInt();
+        System.out.println("请输入矩阵列数："); column = input.nextInt();
+        double[][] matrix = Initmatrix(row, column);
+        int[] array = locateLarget(matrix, row, column);
+        System.out.println("最大元素在：第 " + array[0] + " 行 第 " + array[1] + " 列。");
+        input.close();
     }
 }

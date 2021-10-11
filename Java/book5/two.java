@@ -1,5 +1,7 @@
 package Java.book5;
 
+import java.util.Scanner;
+
 public class two {
     public static int[][] InitMatrix (int column, int row) {
         int[][] matrix = new int[row][column];
@@ -20,11 +22,14 @@ public class two {
         }
         return matrix;
     }
-
+    
     public static void main(String[] args) {
-        int[][] matrix = InitMatrix(5, 5);
-        for (int i=0; i<5; i++) {
-            for (int j=0; j<5; j++) {
+        System.out.println("请输入方阵行列数：");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt(); in.close();
+        int[][] matrix = InitMatrix(n, n);
+        for (int i=0; i<n; i++) {
+            for (int j=0; j<n; j++) {
                 System.out.printf("%1d\t", matrix[i][j]);
             }
             System.out.printf("\n");
