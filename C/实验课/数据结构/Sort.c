@@ -42,13 +42,33 @@ int SortStu (PtrStus students) {
     // ¥”¥ÛµΩ–°≈≈–Ú
     for (int i=1; i<students->length; i++) {
         if (students->students[i].score < students->students[i-1].score) continue;
-        for (int j=i; (students->students[j].score > students->students[j-1].score) && j>0; j--) {
-            Stu temp = students->students[j];
+        Stu temp = students->students[i]; int j = i;
+        for ( ; (temp.score > students->students[j-1].score && j>0); j--) {
+            // printf("%d,%d\n", students->students[j].score, students->students[j-1].score);
             students->students[j] = students->students[j-1];
-            students->students[j-1] = temp;
-        }
+        } students->students[j] = temp;
     }
     return TRUE;
+}
+
+int ShellSort (PtrStus students) {
+    // œ£∂˚≈≈–Ú
+    int array[3] = {1,3,5};
+    for (int k=2; k>0; k--) {
+        int d = array[k];
+        for (int i=0; i<students->length; i+=d) {
+            if (students->students[i].score < students->students[i-d].score) continue;
+            Stu temp = students->students[i]; int j = i;
+            for (; temp.score > students->students[j-1].score; j-=d) {
+                students->students[j] = students->students[j-d];
+            } students->students[j] = temp;
+        }
+    }
+}
+
+int SortByBit (PtrStu students) {
+    // ’€∞Î≤Â»Î≈≈–Ú
+    
 }
 
 int PrintAll (PtrStus students) {
@@ -72,10 +92,16 @@ int PrintByOrder (PtrStus students) {
 
 int main () {
     PtrStus students = InitStu();
-    InsertStu(students, "YJH", 99);
-    InsertStu(students, "HHH", 88);
-    InsertStu(students, "CYX", 90);
-    InsertStu(students, "CY", 88);
-    SortStu(students);
+    InsertStu(students, "A", 99);
+    InsertStu(students, "B", 88);
+    InsertStu(students, "C", 90);
+    InsertStu(students, "D", 88);
+    InsertStu(students, "E", 78);
+    InsertStu(students, "F", 100);
+    InsertStu(students, "G", 79);
+    InsertStu(students, "H", 68);
+    InsertStu(students, "I", 100);
+    InsertStu(students, "J", 59);
+    ShellSort(students);
     PrintByOrder(students);
 }

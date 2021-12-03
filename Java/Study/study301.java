@@ -1,4 +1,4 @@
-package Java.Study;
+package Study;
 
 public class study301 {
     public static void main(String[] args) {

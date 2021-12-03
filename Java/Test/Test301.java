@@ -1,5 +1,4 @@
-package Java.Test;
-
+package Test;
 public class Test301 {
     public static void main(String[] args) {
         Vehicle car = new Vehicle();

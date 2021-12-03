@@ -21,58 +21,22 @@ PtrTree InitTree (int elem) {
     return tree;
 }
 
-int IsEmpty (PtrTree tree) {
-    // 判断是否为空树
-    if (tree->left == NULL && tree->right == NULL) return 1;
-    else return 0;
-}
-
-PtrTree FindNode (PtrTree tree, int elem) {
-    // 查找元素节点
-    PtrTree temp = tree;
-    while (1) {
-        if (temp->elem > elem && temp->left != NULL) temp = temp->left;
-        else if (temp->elem < elem && temp->right != NULL) temp = temp->right;
-        else if (temp->elem > elem && temp->left == NULL) return NULL;
-        else if (temp->elem < elem && temp->right == NULL) return NULL;
-        else return temp;
+void CreateTree (PtrTree* tree) {
+    // 创造树
+    int e; scanf("%d", &e); getchar();
+    if (e == 0) {
+        *tree = NULL;
+    } else {
+        *tree = (PtrTree)malloc(sizeof(Tree));
+        (*tree)->elem = e;
+        CreateTree(&(*tree)->left);
+        CreateTree(&(*tree)->right);
     }
 }
-
-PtrTree InsertNode (PtrTree tree, int elem) {
-    // 插入元素节点
-    PtrTree temp = tree;
-    PtrTree new;
-    while (TRUE) {
-        if (temp->elem > elem && temp->left != NULL) temp = temp->left;
-        else if (temp->elem < elem && temp->right != NULL) temp = temp->right;
-        else if (temp->elem > elem && temp->left == NULL) break;
-        else if (temp->elem < elem && temp->right == NULL) break;
-        else return temp;
-    }
-    if (temp->elem > elem) {
-        temp->left = (PtrTree)malloc(sizeof(Tree));
-        new = temp->left;
-    }
-    else {
-        temp->right = (PtrTree)malloc(sizeof(Tree));
-        new = temp->right;
-    }
-    new->elem = elem; new->left = NULL; new->right = NULL;
-    return new;
-}
-
-// int DeleteNode (PtrTree tree, int elem) {
-//     // 删除元素节点
-//     PtrTree temp = FindNode(tree, elem);
-//     if (temp) {
-        
-//     }
-// }
 
 int SwapChild (PtrTree tree) {
     // 交换每个节点的左右节点
-    // 可以用栈改良
+    // // 可以用栈改良
     if (tree->left) SwapChild(tree->left);
     if (tree->right) SwapChild(tree->right);
     PtrTree temp = tree->left; tree->left = tree->right; tree->right = temp;
@@ -95,15 +59,12 @@ int VisitAll (PtrTree tree, int num) {
 int main ()
 {
     int num=0;
-    PtrTree tree = InitTree(50);
-    InsertNode(tree, 40);
-    InsertNode(tree, 60);
-    InsertNode(tree, 30);
-    InsertNode(tree, 45);
-    InsertNode(tree, 20);
-    InsertNode(tree, 35);
-    InsertNode(tree, 70);
+    PtrTree tree = (PtrTree)malloc(sizeof(Tree));
+    CreateTree(&tree);
+    printf("交换左右节点前：\n");
+    VisitAll(tree, num);
     SwapChild(tree);
+    printf("交换左右节点后：\n");
     VisitAll(tree, num);
     return 0;
 }

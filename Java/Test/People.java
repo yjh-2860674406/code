@@ -1,4 +1,5 @@
-package Java.Test;
+package Test;
+
 
 public class People {
     protected String name;

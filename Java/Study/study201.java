@@ -1,4 +1,4 @@
-package Java.Study;
+package Study;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

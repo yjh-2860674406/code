@@ -10,5 +10,10 @@
     "files.associations": {
         "array": "c",
         "type_traits": "c"
-    }
+    },
+    "java.project.sourcePaths": [
+        "Java"
+    ],
+    "verilog.linting.linter": "iverilog",
+    "verilog.linting.iverilog.arguments": "-i"
 }

@@ -6,6 +6,265 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PriorityQueueTest",
+            "request": "launch",
+            "mainClass": "Book.book11.PriorityQueueTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book11_Stream",
+            "request": "launch",
+            "mainClass": "Book.book11.book11_Stream",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book11_Point",
+            "request": "launch",
+            "mainClass": "Book.book11.book11_Point",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stream_test",
+            "request": "launch",
+            "mainClass": "CY.eleven_eleven.Stream_test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayAlg",
+            "request": "launch",
+            "mainClass": "Test.ArrayAlg",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book12_test",
+            "request": "launch",
+            "mainClass": "Book.book12.book12_test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book12_A",
+            "request": "launch",
+            "mainClass": "Book.book12.book12_A",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch PriorityyQueue",
+            "request": "launch",
+            "mainClass": "Book.book11.PriorityyQueue",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book11_ArrayList",
+            "request": "launch",
+            "mainClass": "Book.book11.book11_ArrayList",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Point",
+            "request": "launch",
+            "mainClass": "Book.book11.Point",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch SequenceTest",
+            "request": "launch",
+            "mainClass": "Book.book10.SequenceTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day",
+            "request": "launch",
+            "mainClass": "Book.book8.Day",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Square",
+            "request": "launch",
+            "mainClass": "Book.book8.Square",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Test.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch add",
+            "request": "launch",
+            "mainClass": "TestClass.Four.fifteen.add",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch stream",
+            "request": "launch",
+            "mainClass": "TestClass.Four.fourteen.stream",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Random_hash",
+            "request": "launch",
+            "mainClass": "TestClass.Four.thirteen.Random_hash",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "TestClass.Three.ten.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch WildDuck",
+            "request": "launch",
+            "mainClass": "TestClass.Three.ten.WildDuck",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch TraffcLight",
+            "request": "launch",
+            "mainClass": "TestClass.Three.nine.TraffcLight",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lanmbada",
+            "request": "launch",
+            "mainClass": "TestClass.Three.nine.Lanmbada",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Noname",
+            "request": "launch",
+            "mainClass": "TestClass.Three.nine.Noname",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindTime",
+            "request": "launch",
+            "mainClass": "TestClass.Three.eight.FindTime",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duck",
+            "request": "launch",
+            "mainClass": "cy.ten_one.Duck",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Card",
+            "request": "launch",
+            "mainClass": "paper_card.Card",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test101",
+            "request": "launch",
+            "mainClass": "test101",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test701",
+            "request": "launch",
+            "mainClass": "Test701",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Maketime",
+            "request": "launch",
+            "mainClass": "Maketime",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day",
+            "request": "launch",
+            "mainClass": "Day",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Square",
+            "request": "launch",
+            "mainClass": "Square",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rctangle",
+            "request": "launch",
+            "mainClass": "cylinder.Rctangle",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cylinder_triangle",
+            "request": "launch",
+            "mainClass": "cylinder.Cylinder_triangle",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Java.book7.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Java.book10.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Isbn",
+            "request": "launch",
+            "mainClass": "Java.cy.Isbn",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Point",
+            "request": "launch",
+            "mainClass": "Java.book11.Point",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Gamebling",
             "request": "launch",
             "mainClass": "Java.book3.Gamebling",
