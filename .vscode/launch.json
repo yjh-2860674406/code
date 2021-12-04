@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lambda",
+            "request": "launch",
+            "mainClass": "Test.lambda",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch PriorityQueueTest",
             "request": "launch",
             "mainClass": "Book.book11.PriorityQueueTest",

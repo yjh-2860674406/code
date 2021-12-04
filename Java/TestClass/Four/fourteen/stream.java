@@ -15,9 +15,8 @@ public class stream {
         List<Integer> array = new ArrayList<Integer>();
         for (int i=0; i<1000; i++) array.add(ran.nextInt(900) + 100);
         Stream<Integer> s = array.stream();
-        Predicate<Integer> seven = (Integer i) -> {return i.intValue() % 7 == 0;};
         List<Integer> res = new ArrayList<Integer>();
-        res = s.filter(seven).collect(Collectors.toList());
+        res = s.filter(x->x.intValue()%7==0).collect(Collectors.toList());
         System.out.println(res.toString());
     }
 }
