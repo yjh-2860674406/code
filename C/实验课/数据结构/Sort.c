@@ -10,14 +10,14 @@
 #define INFEASIBLE -1
 
 typedef struct Student {
-    int score;
-    char name[10];
-}Stu, *PtrStu;
+    int score;      // 学生成绩
+    char name[10];  // 学生姓名
+}Stu, *PtrStu;      
 
 typedef struct Students {
-    PtrStu students;
-    int length;
-    int size;
+    PtrStu students;// 学生数组
+    int length;     // 数组长度
+    int size;       // 数组大小
 }Stus, *PtrStus;
 
 PtrStus InitStu () {
@@ -64,11 +64,6 @@ int ShellSort (PtrStus students) {
             } students->students[j] = temp;
         }
     }
-}
-
-int SortByBit (PtrStu students) {
-    // 折半插入排序
-    
 }
 
 int PrintAll (PtrStus students) {

@@ -3,6 +3,7 @@ package TestClass.Three.nine;
 import java.util.*;
 public class Lanmbada {
     public static void main(String[] args) {
+        // lambda表达式
         Comparator<String> s = (String a, String b) -> {
             return b.compareTo(a);
         };

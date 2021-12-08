@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Noname {
     public static void main(String[] args) {
+        // 匿名函数
         String[] sa = {"east", "west", "south", "north"};
         Comparator<String> s = new Comparator<String>() {
             @Override

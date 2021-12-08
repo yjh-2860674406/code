@@ -20,7 +20,7 @@ public enum TraffcLight {
     public static void main(String[] args) {
         TraffcLight[] traffc = {GREEN, RED, YELLOW};
         for (TraffcLight temp : traffc) {
-            System.out.print(temp.values() + " ");
+            System.out.print(TraffcLight.values() + " ");
             System.out.println(temp.ordinal());
         }
         test(traffc[0]);

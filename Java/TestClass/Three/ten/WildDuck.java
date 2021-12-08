@@ -1,5 +1,13 @@
 package TestClass.Three.ten;
 
+interface Flyable {
+    void fly();
+}
+
+interface Swimmable {
+    void swim();
+}
+
 public class WildDuck implements Swimmable, Flyable{
 
     @Override
