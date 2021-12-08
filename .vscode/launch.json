@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Dowhile",
+            "request": "launch",
+            "mainClass": "TestClass.One.two.Dowhile",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch For",
+            "request": "launch",
+            "mainClass": "TestClass.One.two.For",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch While",
+            "request": "launch",
+            "mainClass": "TestClass.One.two.While",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch two",
+            "request": "launch",
+            "mainClass": "TestClass.One.two",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "TestClass.Two.six.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch CopyOf",
+            "request": "launch",
+            "mainClass": "TestClass.Two.four.CopyOf",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCopy",
+            "request": "launch",
+            "mainClass": "TestClass.Two.four.ArrayCopy",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch For",
+            "request": "launch",
+            "mainClass": "TestClass.Two.four.For",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch User",
+            "request": "launch",
+            "mainClass": "TestClass.Two.three.User",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch lambda",
             "request": "launch",
             "mainClass": "Test.lambda",
