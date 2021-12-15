@@ -6,7 +6,6 @@ public class book12_test {
         try {
             throw a;
         } catch (book12_myexception e) {
-            //TODO: handle exception
             e.Print();
         }
     }

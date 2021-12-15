@@ -7,13 +7,10 @@ public class People {
     public void speakHello () {
         System.out.println("hello");
     }
-
     public void averageHeight () {
         System.out.println(this.height);
     }
-
     public void averageweight () {
         System.out.println(this.weight);
     }
-
 }

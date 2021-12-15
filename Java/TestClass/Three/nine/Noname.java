@@ -17,5 +17,4 @@ public class Noname {
         System.out.println();
         for (String s2:sa) System.out.print(s2+" ");
     }
-
 }

@@ -6,6 +6,167 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Counter_lock",
+            "request": "launch",
+            "mainClass": "Book.book14.Counter_lock",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Myexceptiontest",
+            "request": "launch",
+            "mainClass": "CY.Myexceptiontest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Methodexception",
+            "request": "launch",
+            "mainClass": "CY.Methodexception",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Counter",
+            "request": "launch",
+            "mainClass": "Book.book14.Counter",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunnableDemo",
+            "request": "launch",
+            "mainClass": "Book.book14.RunnableDemo",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Catecory",
+            "request": "launch",
+            "mainClass": "Book.book13.Catecory",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rename",
+            "request": "launch",
+            "mainClass": "Book.book13.Rename",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Data",
+            "request": "launch",
+            "mainClass": "Book.book13.Data",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch zip",
+            "request": "launch",
+            "mainClass": "TestClass.Five.seventeen.zip",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Student",
+            "request": "launch",
+            "mainClass": "TestClass.Five.seventeen.Student",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch dataout",
+            "request": "launch",
+            "mainClass": "TestClass.Five.seventeen.dataout",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch TicketsTest",
+            "request": "launch",
+            "mainClass": "TestClass.Five.eighteen.TicketsTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch book11_PriorityQueueTest",
+            "request": "launch",
+            "mainClass": "Book.book11.book11_PriorityQueueTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch labc",
+            "request": "launch",
+            "mainClass": "TestClass.Five.eighteen.labc",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch abc",
+            "request": "launch",
+            "mainClass": "TestClass.Five.eighteen.abc",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch optional",
+            "request": "launch",
+            "mainClass": "TestClass.Four.sixteen.optional",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch ISBN",
+            "request": "launch",
+            "mainClass": "TestClass.Two.seven.ISBN",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sushu",
+            "request": "launch",
+            "mainClass": "TestClass.Three.eight.Sushu",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch BMI",
+            "request": "launch",
+            "mainClass": "TestClass.One.two.BMI",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch gcd",
+            "request": "launch",
+            "mainClass": "Test.gcd",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test_1",
+            "request": "launch",
+            "mainClass": "TestClass.Two.five.Test_1",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "TestClass.Two.five.test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataOutputStream_test",
+            "request": "launch",
+            "mainClass": "TestClass.Five.seventeen.DataOutputStream_test",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Dowhile",
             "request": "launch",
             "mainClass": "TestClass.One.two.Dowhile",
