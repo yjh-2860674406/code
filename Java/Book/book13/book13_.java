@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Random;
 
-public class Data {
+public class book13_ {
     public static void main(String[] args) throws IOException {
         Random ran = new Random();
         DataOutputStream data_out = new DataOutputStream(new FileOutputStream("D:\\code\\Java\\Book\\book13\\data.dat"));

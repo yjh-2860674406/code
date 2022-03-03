@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class book12_A {
     public static void methodA () throws IOException {
-        IOException e = new IOException();
+        IOException e = new IOException("a exception!");
         throw e;
     }
 
@@ -16,7 +16,7 @@ public class book12_A {
         try {
             methodB();
         } catch (IOException e) {
-            
+            System.out.println(e);
         }
     }
 

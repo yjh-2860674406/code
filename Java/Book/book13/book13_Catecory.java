@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 
-public class Catecory {
+public class book13_Catecory {
     public static void main(String[] args) throws IOException {
         System.out.println("请输入源文件路径：");
         Scanner in = new Scanner(System.in);

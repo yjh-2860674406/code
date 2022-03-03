@@ -3,7 +3,7 @@ package Book.book13;
 import java.io.File;
 import java.util.Scanner;
 
-public class Rename {
+public class book13_Rename {
     public static void main(String[] args) {
         System.out.println("请输入文件的路径：");
         Scanner in = new Scanner(System.in);

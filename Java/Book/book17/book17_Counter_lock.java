@@ -1,12 +1,12 @@
-package Book.book14;
+package Book.book17;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Counter_lock {
+public class book17_Counter_lock {
     private int count;
     Lock lock = new ReentrantLock();
-    public Counter_lock () {
+    public book17_Counter_lock () {
         this.count = 0;
     }
 
@@ -18,7 +18,7 @@ public class Counter_lock {
     }
 
     public static void main(String[] args) {
-        Counter_lock counter = new Counter_lock();
+        book17_Counter_lock counter = new book17_Counter_lock();
         Runnable task = () -> {
             for (int i=0; i<100; i++) {
                 System.out.println(Thread.currentThread().getName() + 

@@ -1,8 +1,8 @@
-package Book.book14;
+package Book.book17;
 
-public class Counter_method {
+public class book17_Counter_method {
     private int count;
-    public Counter_method () {
+    public book17_Counter_method () {
         this.count = 0;
     }
 
@@ -12,7 +12,7 @@ public class Counter_method {
     }
 
     public static void main(String[] args) {
-        Counter_method counter = new Counter_method();
+        book17_Counter_method counter = new book17_Counter_method();
         Runnable task = () -> {
             for (int i=0; i<100; i++) {
                 System.out.println(Thread.currentThread().getName() + 

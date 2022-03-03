@@ -1,6 +1,6 @@
-package Book.book14;
+package Book.book17;
 
-public class RunnableDemo{
+public class book17_RunnableDemo{
     public static void main(String[] args) {
         Runnable task = () -> {
             for (int i=0; i<100; i++) {

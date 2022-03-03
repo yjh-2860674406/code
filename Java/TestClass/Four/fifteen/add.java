@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class add {
-    public static void main(String[] args) {
+    public static void main(String...args) {
         caculate();
     }
     public static int caculate () {

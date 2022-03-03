@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Run",
+            "request": "launch",
+            "mainClass": "Test.Run",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Launch run",
+            "request": "launch",
+            "mainClass": "Test.run",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Launch Counter_lock",
             "request": "launch",
             "mainClass": "Book.book14.Counter_lock",
