@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>键盘事件</title>
+            <script type="text/javascript" src="../JS/vue.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <h2>欢迎使用{{name}}搜索</h2>
+            <input type="text" placeholder="按下回车提示输入" @keyup.enter="showInfo">
+            <!-- keydown 压发 -->
+            <!-- keyup 松发 -->
+            <!-- enter 回车 -->
+            <!-- delete 删除 -->
+            <!-- 退出 esc -->
+            <!-- 空格 space -->
+            <!-- 换行 tab -->
+            <!-- 上 up -->
+            <!-- 下 down -->
+            <!-- 左 left -->
+            <!-- 右 right -->
+            <!-- 修饰键 ctrl alt shift meta -->
+        </div>        
+    </body>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+
+        new Vue ({
+            el : "#root",
+            
+            data : {
+                name : "百度"
+            },
+
+            methods : {
+                showInfo(e){
+                    // if (e.keyCode !== 13) return
+                    console.log(e.target.value)
+                }
+            }
+        })
+    </script>    
+</html>

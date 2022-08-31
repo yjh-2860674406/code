@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1.姓名案例_插值</title>
+        <script type="text/javascript" src="../JS/vue.js"></script>
+    </head>
+
+    <body>
+        <div id="root"> 
+            姓 : <input type="text" v-model="firstName"> <br>
+            名 : <input type="text" v-model="lastName"> <br>
+            姓名 : <span>{{name()}}</span>
+        </div>
+
+    </body>
+    
+    <script>
+        Vue.config.productionTip = false
+        
+        new Vue ({
+            el : "#root",
+
+            data : {
+                firstName : "张",
+                lastName : "三"
+            },
+
+            methods : {
+                name () {
+                    return this.firstName + "-" + this.lastName
+                }
+            }
+        })
+    </script>
+</html>

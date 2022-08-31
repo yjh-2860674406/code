@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../JS/vue.js"></script>
+        <script type="text/javascript" src="../JS/dayjs.min.js"></script>
+        <title>过滤器</title>
+    </head>
+    
+    <body>
+        <div id="root">
+            <h2>显示格式化后的时间</h2>
+            <h3>现在是：{{time | timeFormater}}</h3>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+
+        new Vue({
+            el:"#root",
+            data : {
+                time : 0
+            },
+            computed : {
+                fmtTime () {
+                    return dayjs().format('YYYY-MM-DD HH:mm:ss')
+                }
+            },
+            methods : {
+                getFmtTime () {
+                    return dayjs().format('YYYY-MM-DD HH:mm:ss')
+                }
+            },
+            filters : {
+                timeFormater(time) {
+                    if (time == 0) return dayjs().format('YYYY-MM-DD HH-mm-ss')
+                    return dayjs(time).format('YYYY-MM-DD HH-mm-ss')
+                }
+            },
+        })
+    </script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>初识Vue</title>
+        <!-- 引入Vue -->
+        <script type="text/javascript" src="../JS/vue.js"></script>
+    </head>
+
+    <body>
+        <!-- 准备好一个容器 -->
+        <!-- 容器里的代码称为Vue模板 -->
+        <div id = "root">
+            <h1>Hello, {{name}}</h1>
+        </div>
+
+        <script type="text/javascript">
+            Vue.config.productionTip = false;
+
+            // 创建Vue实例
+            // 与容器一一对应
+            new Vue({
+                el : '#root', 
+                // el 用于指定当前Vue实例为哪个容器服务
+                // 值通常为css选择器字符串
+                data : {
+                    // data 用于存储数据
+                    // 数据供 el 使用
+                    name : "World"
+                }
+            });
+
+        </script>
+    </body>
+
+</html>

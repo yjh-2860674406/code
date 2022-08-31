@@ -1,6 +1,5 @@
 package Study;
 
-
 public class study101 {
     public static class People {
         public int age;

@@ -15,6 +15,6 @@ for word in words:
 items = list(counts.items())
 items.sort(key=lambda x: x[1], reverse=True)    # 根据词语出现的次数进行从大到小排序
 
-for i in range(3):
+for i in range(10):
     word, count = items[i]
     print("{0:<5}{1:>5}".format(word, count))

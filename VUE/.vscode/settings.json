@@ -1,0 +1,5 @@
+{
+    "editor.suggest.shareSuggestSelections": false,
+    "editor.suggestSelection": "recentlyUsed",
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
